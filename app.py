@@ -22,8 +22,8 @@ def predict():
     '''
     For rendering results on HTML GUI
     '''
-    #CustomerID = float(request.args.get('CustomerID'))
-    #Surname = float(request.args.get('Surname'))
+    CustomerID = float(request.args.get('CustomerID'))
+    Surname = float(request.args.get('Surname'))
     CreditSocre = float(request.args.get('CreditSocre'))
     Geography = float(request.args.get('Geography'))
     Gender=float(request.args.get('Gender'))

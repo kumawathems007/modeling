@@ -22,8 +22,8 @@ def predict():
     '''
     For rendering results on HTML GUI
     '''
-    CustomerID = float(request.args.get('CustomerID'))
-    Surname = float(request.args.get('Surname'))
+    #CustomerID = float(request.args.get('CustomerID'))
+    #Surname = float(request.args.get('Surname'))
     CreditSocre = float(request.args.get('CreditSocre'))
     Geography = float(request.args.get('Geography'))
     Gender=float(request.args.get('Gender'))
@@ -35,7 +35,7 @@ def predict():
     IsActiveMember = float(request.args.get('IsActiveMember'))
     EstimatedSalary = float(request.args.get('EstimatedSalary'))
     
-    prediction = model.predict([[CustomerID,Surname,CreditSocre,Geography,Gender,Age,Tenure,Blance,NumofProducts,HasCrCrad,IsActiveMember,EstimatedSalary]])
+    prediction = model.predict([[CreditSocre,Geography,Gender,Age,Tenure,Blance,NumofProducts,HasCrCrad,IsActiveMember,EstimatedSalary]])
     
         
     return render_template('index2.html', prediction_text='All Model  has predicted Placment for given Data is : {}'.format(prediction))

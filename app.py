@@ -38,7 +38,7 @@ def predict():
     prediction = model.predict([[ CustomerID, Surname, CreditSocre,Geography,Gender,Age,Tenure,Blance,NumofProducts,HasCrCrad,IsActiveMember,EstimatedSalary]])
     
         
-    return render_template('index2.html', prediction_text='All Model  has predicted Placment for given Data is : {}'.format(prediction))
+    return render_template('index2.html', prediction_text='All Model  has predicted Exited for given Data is : {}'.format(prediction))
    
 if __name__ == "__main__":
     app.run(debug=True)

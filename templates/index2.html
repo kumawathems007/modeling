@@ -32,14 +32,7 @@ div {text-align: center;}
 <h4>Developed by Hemraj kumawat</h4>
 <!-- Main Input For Receiving Query to our ML -->
 <form action="{{ url_for('predict')}}"method="get">
-#<div class="form-floating mb-3">
-#<input type="number" class="form-control" id="CustomerID" name="CustomerID" step="any" min="0" max="100000" placeholder="0" required="required">
-#<label for="floatingInput">Enter Customer Id</label>
-#</div>
-#<div class="form-floating mb-3">
-#<input type="number" class="form-control" id="Surname" name="Surname" step="any" min="0" max="100" placeholder="0" required="required">
-#<label for="floatingInput">Enter Surname </label>
-#</div>
+
 <div class="form-floating mb-3">
 <input type="number" class="form-control" id="CreditSocre" name="CreditSocre" step="any" min="0" max="10000" placeholder="0" required="required">
 <label for="floatingInput">Enter Credit Score</label>
